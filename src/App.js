@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import  Typewriter from "./components/Typewriter";
-import  {PageStyle}  from "./components/style/Style";
+import Typewriter from "./components/Typewriter";
+import { PageStyle } from "./components/style/Style";
 
 function App() {
   return (
     <PageStyle>
-    <Typewriter/>
+      <Typewriter />
     </PageStyle>
-    );
+  );
 }
 
 export default App;
