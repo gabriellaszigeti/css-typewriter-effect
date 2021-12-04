@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { keyframes} from "styled-components"
+import { keyframes } from "styled-components"
 
-export const DivStyle  = styled.div`
+export const DivStyle = styled.div`
 width: 100%;
 height: 500px;
 display: flex;
@@ -20,14 +20,16 @@ const typing = keyframes`
 `;
 
 const blink = keyframes`
-from{border-right-color: red;}
-to{border-right-color: transparent;}
+from,
+to{
+  border-right-color: transparent;}
+
+  50%{border-color: purple;}
 `;
 
 
-export const PageStyle  = styled.div`
+export const PageStyle = styled.div`
 background-color: whitesmoke;
-font-family: 'Source Code Pro', monospace;  
 font-size: 24px;
 margin: 25px;
 height: 100%;
@@ -36,12 +38,13 @@ justify-content: center;
 align-items: center;
 `;
 
-export const H1Style  = styled.h1`
+export const H1Style = styled.h1`
 color:blue;
 overflow: hidden;
+font-family: monospace;  
 margin: 0 auto;
 letter-spacing: 0.10em;
-border-right: 0.20 em solid purple;
+border-right: 0.1em solid purple;
 white-space: nowrap;
 animation:${typing} 4s steps(30,end) 1s 1 normal both, ${blink} 0.6s steps(29,end) infinite;
 `;
