@@ -7,7 +7,7 @@ export default function Typewriter() {
 
     return (
         <DivStyle>
-            <H1Style>Hello, world!</H1Style>
+            <H1Style>Hello, World!:)</H1Style>
         </DivStyle>
     )
 
