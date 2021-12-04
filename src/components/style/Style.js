@@ -9,31 +9,25 @@ justify-content: center;
 align-items: center;
 `;
 
-
 const typing = keyframes`
   from {
     width:0;
   }
 
   to {
-    width:100%;
+    width:472px;
   }
 `;
 
 const blink = keyframes`
-  from,
-  to {
-    border-color: transparent;
-  }
-  50%{
-      border-color:purple;
-  }
+from{border-right-color: red;}
+to{border-right-color: transparent;}
 `;
 
 
 export const PageStyle  = styled.div`
 background-color: whitesmoke;
-font-family: arial;
+font-family: 'Source Code Pro', monospace;  
 font-size: 24px;
 margin: 25px;
 height: 100%;
@@ -49,7 +43,7 @@ margin: 0 auto;
 letter-spacing: 0.10em;
 border-right: 0.20 em solid purple;
 white-space: nowrap;
-animation:${typing} 4.0s steps(100,end), ${blink} 0.5s step-end infinite;
+animation:${typing} 4s steps(30,end) 1s 1 normal both, ${blink} 0.6s steps(29,end) infinite;
 `;
 
 
