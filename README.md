@@ -1,3 +1,12 @@
+# Hey, welcome!
+
+This project simulates a simple typewriter effect with CSS.
+
+![Gif](https://github.com/gabriellaszigeti/css-typewriter-effect/blob/master/images/typewriter-animation.gif?raw=true)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
